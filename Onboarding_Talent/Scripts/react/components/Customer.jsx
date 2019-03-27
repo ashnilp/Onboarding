@@ -205,7 +205,7 @@ export default class Customer extends React.Component {
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Address</th>s
+                                    <th>Address</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -214,12 +214,14 @@ export default class Customer extends React.Component {
                         {customerDetails}
                     </tbody>
                 </table>
+                <br/>
                 <Modal
                     title="Customer Details"
                     modalData={modalData}
                     saveModalDetails={this.saveModalDetails}
                     newItemFlag={rI}
                 />
+                <br/>
                 <ModalDelete 
                     title="Delete Customer"
                     modalData={modalData}
